@@ -28,6 +28,11 @@ bot.on('message', message => {
   const cmdlength = cmd.length + 1;
 });
 
+bot.on('message', message  =>{
+  if(message.content === PREFIX + 'slt') {
+    message.channel.send("SALUT TOUT LE MONDE")
+  }
+})
 bot.on("guildMemberAdd", member => {
   const baseServer = bot.guilds.get("530337552050290698");
   const bienvenue = bot.channels.get("558759331781410847");
