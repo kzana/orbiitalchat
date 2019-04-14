@@ -34,8 +34,8 @@ bot.on('message', message  =>{
   }
 })
 bot.on("guildMemberAdd", member => {
-  const baseServer = bot.guilds.get("530337552050290698");
-  const bienvenue = bot.channels.get("558759331781410847");
+  const baseServer = bot.guilds.get("545639690154278971");
+  const bienvenue = bot.channels.get("546746760006074368");
   const embed = new Discord.RichEmbed()
   .setTitle("Nouveau membre")
   .setDescription(member.displayName + " est arrivé sur le serveur " + baseServer.name)
@@ -47,8 +47,8 @@ bot.on("guildMemberAdd", member => {
 });
 
 bot.on("guildMemberRemove", member => {
-  const baseServer = bot.guilds.get("530337552050290698");
-  const bienvenue = bot.channels.get("558759331781410847");
+  const baseServer = bot.guilds.get("545639690154278971");
+  const bienvenue = bot.channels.get("546746760006074368");
   const embed = new Discord.RichEmbed()
   .setTitle("Un Membre en moins")
   .setDescription(member.displayName + " a quitté le serveur " + baseServer.name + "\nNous lui souhaitons une bonne continuation ^-^")
